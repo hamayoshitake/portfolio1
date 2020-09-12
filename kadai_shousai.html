@@ -1,0 +1,40 @@
+<!doctype html>
+ <html>
+ <link rel="stylesheet" href="kadai_shousai.css">
+ <head>
+ <meta charset="UTF-8">
+
+ <title>課題詳細</title>
+ </head>
+ <body>
+ <h1>課題情報詳細</h1>
+
+ <table class="kadai_shousai">
+
+<form method="post" action="./kadai_shousai.php">
+
+ <input type="hidden" name="kadai_account_id" class="list" value="<###id###>" /></td></tr>
+ <tr><th>日付：</th><td><input type="text" name="kadai_hiduke" class="list" value="<###hiduke###>" /></td></tr>
+<tr><th>受講者：</th><td><input type="text" name="kaitou_jukousha" class="list" value="<###jukousha###>" /></td></tr><tr><th>期：</th><td><input type="text" name="kadai_ki" class="list" value="<###ki###>" /></td></tr>
+ <tr><th>課題回：</th><td><input type="text" name="kadai_mei" class="list" value="<###mei###>" /></td></tr>
+ <tr><th>課題概要：</th><td><input type="text" name="kadai_gaiyou" class="list" value="<###gaiyou###>" /></td></tr>
+<tr><th>内容：</th><td><input type="text" name="kadai_naiyou" class="list" value="<###naiyou###>" /></td></tr>
+<tr><th>回答例：</th><td><input type="text" name="kadai_kaitourei" class="list" value="<###rei###>" /></td></tr>
+<tr><th>回答コード：</th><td><###code###></td></tr>
+<input type="hidden" name="kaitou_id" class="list" value="<###kaitouid###>" />
+
+</table>
+<input type="submit" class="btn" name="submit_option" value="更新" <###SUBOPTION1###> />
+<input type="submit" class="btn" name="submit_option" value="追加"<###SUBOPTION2###> />
+ <input type="submit" class="btn" name="submit_option"  value="削除" <###SUBOPTION3###> />
+<input type="hidden" name="target_id" value="<###EMPLOYERID###>" />
+</form>
+</body>
+
+<div class="logout">
+<input type="button" name="logout" class="btn-square-shadow" onclick="location.href='./login.php'" value="LOGOUT"/>
+</div>
+<div class="go back">
+<input type="button" name="go back" class="btn-square-shadow2" onclick="location.href='./kadai_list2.php'" value="go back to list"/>
+</div>
+</html>
