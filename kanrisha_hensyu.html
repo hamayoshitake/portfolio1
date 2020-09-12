@@ -1,0 +1,41 @@
+<!doctype html>
+ <html>
+ <link rel="stylesheet" href="kanrisha_hensyu.css">
+  <head>
+  <meta charset="UTF-8">
+ <title>登録、更新、削除画面</title>
+ </head>
+ <body>
+ <h1>登録、更新、削除画面</h1>
+
+ <table class="kanrisha_list">
+
+ <h3>新規登録・更新・削除</h3>
+
+ <form method="post" action="./kanrisha_hensyu.php">
+
+<input type="hidden" name="kanrisha_account_id" value="<###id###>" class="list" required>
+   <tr><th>管理者番号：</th><td><input type="text" name="kanrisha_bango" value="<###bango###>" class="list" ></td></tr>
+   <tr><th>管理者名：</th><td><input type="text" name="kanrisha_mei" value="<###mei###>" class="list" required></td></tr>
+   <tr><th>所属部：</th><td><input type="text" name="shozokubu" value="<###shozokubu###>" class="list" ></td></tr>
+   <tr><th>パスワード：</th><td><input type="text" name="kanrisha_pass" value="<###pass###>" class="list" ></td></tr>
+
+
+</table>
+
+<input type="submit" class="btn" name="submit_option" value="更新" <###SUBOPTION1###> />
+<input type="submit" class="btn" name="submit_option" value="追加"<###SUBOPTION2###> />
+ <input type="submit" class="btn" name="submit_option"  value="削除" <###SUBOPTION3###> />
+<input type="hidden" name="target_id" value="<###EMPLOYERID###>" />
+</form>
+</body>
+
+<div class="logout">
+<input type="button" name="logout" class="btn-square-shadow" onclick="location.href='./login.php'" value="LOGOUT"/>
+</div>
+<div class="go back">
+<input type="button" name="go back" class="btn-square-shadow2" onclick="location.href='./kanrisha_touroku.php'" value="go back to list"/>
+</div>
+
+
+</html>

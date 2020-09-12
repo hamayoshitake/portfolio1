@@ -1,0 +1,24 @@
+<!doctype html>
+ <html>
+<link rel="stylesheet" href="jukousha_list.css">
+  <head>
+  <meta charset="UTF-8">
+ <title>受講者一覧</title>
+ <h1>受講者一覧</h1>
+ </head>
+ <body>
+ <div class="login_mei">
+ ログイン名：<###LOGINNAME###>
+ </div>
+  <input type="button" name="menu" class="btn-square-shadow" onclick="location.href='./kanrisha_menu.html'"  value="MENU"/>
+
+ <table class="jukousha_list">
+ <tr>
+<th>受講者ID</th><th>受講者番号</th><th>受講者名</th><th></th></tr>
+<###EMPLOYERLIST###>
+
+ </body>
+ <div class="logout">
+ <input type="button" name="logout" class="btn-square-shadow2" onclick="location.href='./login.php'"  value="LOGOUT">
+ </div>
+ </html>

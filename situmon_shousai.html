@@ -1,0 +1,79 @@
+<!doctype html>
+ <html>
+ <link rel="stylesheet" href="situmon_shousai.css">
+ <head>
+ <meta charset="UTF-8">
+
+ <title>質問詳細</title>
+ </head>
+ <body>
+ <h1>質問情報詳細</h1>
+ <table id="shitumon_shousai">
+
+<form method="post" action="./situmon_shousai.php">
+<tr><td><input type="hidden" name="shitumon_account_id" class="list" value="<###id###>" /></td></tr>
+
+<tr><th>日付：</th><td><input type="text" name="shitumon_hiduke" class="list" value="<###hiduke###>" /></td></tr>
+<tr><th>受講者：</th><td><input type="text" name="shitumon_jukousha" class="list" value="<###jukousha###>" /></td></tr>
+<tr><th>期：</th><td><input type="text" name="shitumon_ki" class="list" value="<###ki###>" /></td></tr>
+ <tr><th>概要：</th><td><input type="text" name="shitumon_gaiyou" class="list" value="<###gaiyou###>" /></td></tr>
+ <tr><th>質問内容：</th><td><input type="text" name="shitumon_naiyou" class="list" value="<###naiyou###>" /></td></tr>
+
+</table>
+<br>
+<br>
+<input type="submit" class="btn" name="submit_option" value="更新" <###SUBOPTION1###>
+<input type="submit" class="btn" name="submit_option" value="追加"<###SUBOPTION2###>
+ <input type="submit" class="btn" name="submit_option"  value="削除" <###SUBOPTION3###>
+<input type="hidden" name="target_id" value="<###EMPLOYERID###>" /><!--<input type=" value="confirm" >-->
+
+<table id="shitumon_shousai2">
+
+
+<h1>返答</h1>
+<tr><th>返答者：</th><td><input type="text" name="shitumon_hentousha" class="list" value="<###hentousha###>" /></td></tr>
+<tr><th>返答日：</th><td><input type="text" name="shitumon_hentou_hiduke" class="list" value="<###hentou_hiduke###>" /></td></tr>
+<tr><th>返答：</th><td><input type="text" name="shitumon_hentou" class="list" value="<###hentou###>" /></td></tr>
+
+</table>
+
+<br>
+<br>
+
+
+<table class=shitumon_list2>
+<tr><th>受講者</th><th>日付</th><th>受講者返答</th></tr>
+<###EMPLOYERLIST2###>
+</table>
+
+<br>
+<br>
+
+<section>
+  <table class=shitumon_list2>
+    <tr><th>返答者</th><th>返答日</th><th>返答</th></tr>
+    <###EMPLOYERLIST###>
+    </table>
+    
+    </section>
+    </form>
+    
+    <input type="button" name="logout" class="btn-square-shadow" onclick="location.href='./login.php'" value="LOGOUT"/>
+    
+    <div class="go back">
+    <input type="button" name="go back" class="btn-square-shadow2" onclick="location.href='./situmon_list.php'" value="go back to list"/>
+    </div>
+    </body>
+    <footer>
+    
+    <br>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    </footer>
+    
+    
+    </html>

@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+
+ body {
+ background-image : url("https://pics.prcm.jp/0a38cee69339c/84107154/jpeg/84107154.jpeg");
+
+}
+h1 {
+  position: relative;
+  padding: 0.5em;
+  background: #a6d3c8;
+  color: white;
+  text-align:center;
+}
+
+h1::before {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 0;
+  border: none;
+  border-bottom: solid 15px transparent;
+  border-right: solid 20px rgb(149, 158, 155);
+}
+.btn-square {
+  display: inline-block;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  background: #668ad8;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+
+}
+.btn-square:active {
+  /*ボタンを押したとき*/
+  transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+.lname {
+ width : 300px;
+ margin-left : auto;
+}
+
+.tmaster {
+ width : 250px;
+ margin:0 0 0 900px;
+}
+.ie {
+  position : absolute;
+  top : 118px;
+  left: 100px;
+ }
+ 
+ .wrapper {
+  width : 500px;
+  height : 800px;
+  margin-right : auto;
+  margin-left : auto;
+  border : 3px solid #191970;
+  border-radius : 7px;
+  background : #f0f8ff;
+ 
+ }
+ 
+ .menubutton {
+  width : 400px;
+  height : 100px;
+  font-family : "メイリオ" , sans-serif;
+  color : #ffffff;
+  font-size : 40px;
+  font-weight : bold;
+ /* border-left : 10px solid #191970; */
+  border-radius : 10px;
+  background : #006400;
+  margin : 20px 0 0 50px;
+  box-shadow : 5px 5px 5px 5px #778899;
+}
+
+.menubutton:hover{
+ color : #ffffff;
+ background : #228b22;
+}
+.logo {
+ width : 120px;
+ height : 50px;
+ font-size :20px ;
+ border : solid #191970 1px;
+ border-radius : 3px;
+ background : #d3d3d3;
+ margin-right : 80px;
+ float : right;
+ font-weight : bold;
+ box-shadow : 3px 1px 1px 1px #191970;
+}
+
+.logo:hover {
+ color : #696969;
+ background : #dcdcdc;
+ box-shadow : 3px 1px 1px 1px #00008b;
+ border : solid #00008b 1px;
+}
+.menu {
+ width : 120px;
+ height : 50px;
+ font-size :20px ;
+ border : solid #191970 1px;
+ border-radius : 3px;
+ background : #d3d3d3;
+ margin-right : 80px;
+ margin-top : 15px;
+ float : right;
+ font-weight : bold;
+ box-shadow : 3px 1px 1px 1px #191970;
+}
+
+.menu:hover {
+ color : #696969;
+ background : #dcdcdc;
+ box-shadow : 3px 1px 1px 1px #00008b;
+ border : solid #00008b 1px;
+}

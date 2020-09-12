@@ -1,0 +1,42 @@
+<!doctype html>
+
+  <html>
+  <link rel="stylesheet" href="kanrisha_shousai.css">
+  <head>
+  <meta charset="UTF-8">
+
+  <title>管理者詳細</title>
+  </head>
+  <body>
+
+  <h1>管理者情報詳細</h1>
+ <table class="kanrisha_list">
+
+ <form method="post" action="./kanrisha_shousai.php">
+
+ <tr><th>管理者ID：</th><td><input type="text"  name="kanrisha_id" class="list" value="<###id###>" /></td></tr>
+ <tr><th>管理者番号：</th><td><input type="text" name="kanrisha_bango" class="list" value="<###bango###>" /></td></tr>
+ <tr><th>管理者名：</th><td><input type="text" name="kanrisha_mei" class="list" value="<###mei###>" /></td>
+</tr>
+ <tr><th>所属部：</th><td><input type="text" name="shozokubu" class="list" value="<###shozokubu###>" /></td>
+</tr>
+<tr><th>パスワード：</td><td><input type="text" name="password" class="list" value="<###password###>" /></td>
+</tr>
+
+
+</form>
+</body>
+
+</table>
+
+</div>
+<div class="logout">
+<input type="button" name="logout" class="btn-square-shadow" onclick="location.href='./login.php'" value="LOGOUT"/>
+</div>
+<div class="go back">
+<input type="button" name="go back" class="btn-square-shadow2" onclick="location.href='./kanrisha_touroku.php'" value="go back to list"/>
+</div>
+
+
+
+</html>

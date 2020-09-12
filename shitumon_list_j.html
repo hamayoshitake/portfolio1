@@ -1,0 +1,38 @@
+<!doctype html>
+ <html>
+ <link rel="stylesheet" href="situmon_list.css">
+  <head>
+  <meta charset="UTF-8">
+ <title>質問一覧</title>
+ </head>
+ <body>
+ <h1>質問一覧</h1>
+ <div class="login_mei">
+ ログイン名：<###LOGINNAME###>
+ </div>
+
+<form action='./shitumon_list_j.php' method="post">
+   <!-- 任意の<input>要素＝入力欄などを用意する -->
+   <input type="text" name="name">
+   <!-- 送信ボタンを用意する -->
+   <input type="submit" name="kensaku" value="検索">
+</form>
+
+ <input type="button" name="menu" class="btn-square-shadow" onclick="location.href='./jukousha_menu.html'"  value="MENU"/>
+ <form method='get' action='./shitumon_list_j.php'>
+<select name="sousin">
+<option value ="23期">23期</option>
+<option value ="22期">22期</option>
+<option value ="21期">21期</option>
+</select><input type="submit"value="送信"<###EMPLOYERID###>/>
+</form>
+<table class="situmon_list">
+
+<tr><th>ID</th><th>日付</th><th>概要</th><th>期</th><th>受講者名</th><th></th></tr>
+<###EMPLOYERLIST###>
+</table>
+<div class="logout">
+<input type="button" name="logout" class="btn-square-shadow2" onclick="location.href='./login.php'"  value="LOGOUT">
+</div>
+</body>
+</html>
