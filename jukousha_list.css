@@ -1,0 +1,111 @@
+@charset "UTF-8";
+ body{
+
+ background-image: url("http://www.netyasun.com/home/bk-img/b011.jpg");
+}
+.btn-square-shadow {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -200px;
+  display: inline-block;
+  padding: 0.5em 2em;
+  text-decoration: none;
+  background: #668ad8;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+table {
+  text-align:center;
+  margin-left:auto;margin-right:auto;
+  width: 100%;
+  border-collapse:separate;
+  border-spacing: 0;
+  border: 0.1px  #000080 solid;
+  background-image: url("http://www.netyasun.com/home/bk-img/b011.jpg")
+}
+
+table th:first-child{
+  border-radius: 1px 0 0 0;
+  border: 0.1px #000080 solid;;
+}
+table th:last-child{
+  border-radius: 0 1px 0 0;
+  border-right: 1px solid #3c6690;
+  border: 0.1px #000080 solid;;
+}
+
+table th{
+  text-align: center;
+  color:white;
+  background: linear-gradient(#829ebc,#225588);
+  border-left: 1px solid #3c6690;
+  border-top: 1px solid #3c6690;
+  border-bottom: 1px solid #3c6690;
+ /* box-shadow: 0px 1px 1px rgba(255,255,255,0.3) inset;*/
+  width: 25%;
+  padding: 10px 0;
+  font-size: 30px;
+  border: 0.1px #000080 solid;
+}
+
+table td{
+  text-align: center;
+  border-left: 0.1px solid #a8b7c5;
+ border-bottom: 1px solid #000080;
+  border-top:none;
+   /* box-shadow: 0px -3px 5px 1px #eee inset;*/
+   width: 25%;
+   padding: 10px 0;
+   font-size: 20px;
+  border: 0.1px  #000080 dashed;
+ }
+  button{
+  font-size: 20px;
+ }
+ 
+ table td:last-child{
+   border-right: 1px  #000080 solid;
+   border: 0.1px #000080 dashed;
+ 
+ }
+ 
+ table tr:last-child td:first-child {
+   border-radius: 0 0 0 0.1px;
+   border: 0.1px #000080 dashed;
+ }
+ 
+ table tr:last-child td:last-child {
+   border-radius: 0 0 1px 0;
+   border: 0.1px #000080 dashed;
+ }
+  .btn-square-shadow2 {
+     position: fixed;
+     bottom: 10px;
+     left: 50%;
+     margin-left: 20px;
+     display: inline-block;
+  padding:0.5em 1.5em;
+  text-decoration: none;
+  background: #668ad8;
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+.login_mei{
+ font-size:20px;
+ color: #00008B;
+
+}
+ h1{
+  color: #00008B;
+  border-bottom: dashed 2px #6594e0;
+
+        font-size:3em;
+        line-height:0.95em;
+        font-weight:bold;
+        text-shadow:
+                0.04em 0.02em 0 #B0BEC5,
+                0.08em 0.05em 0 rgba(0, 0, 0, 0.6);
+}

@@ -1,0 +1,38 @@
+<!doctype html>
+ <html>
+  <link rel="stylesheet" href="jukousha_touroku.css">
+  <head>
+  <meta charset="UTF-8">
+ <title>受講者新規登録画面</title>
+ </head>
+ <body>
+ <h1>受講者新規登録画面</h1>
+ <table class="kanrisha_list">
+
+ </div>
+ <h3>新規登録</h3>
+
+  <form method="post" action="./jukousha_touroku_t.php">
+  <table>
+  <input type="hidden" name="jukousha_account_id" value="<###id###>" class="list">
+ <tr><th>受講者番号：</th><td><input type="text" name="jukousha_bango" value="<###bango###>" class="list"></td></tr>
+ <tr><th>管理者名：</th><td><input type="text" name="jukousha_mei" value="<###mei###>" class="list"required></td></tr>
+ <tr><th>受講者(かな)：</th><td><input type="text" name="jukousha_kana" value="<###kana###>" class="list"></td></tr>
+ <tr><th>期：</th><td><input type="text" name="jukousha_ki" value="<###ki###>" class="list"></td></tr>
+ <tr><th>パスワード：</th><td><input type="text" name="jukousha_pass" value="<###pass###>" class="list"required></td></tr>
+
+
+</table>
+
+<input type="hidden" name="target_id" value="<###EMPLOYERID###>" />
+<input type="submit" class="btn" name="submit_option" value="追加"<###SUBOPTION2###> />
+</form>
+</body>
+<div class="logout">
+<input type="button" name="logout" class="btn-square-shadow" onclick="location.href='./login.php'" value="LOGOUT"/>
+</div>
+<div class="go back">
+<input type="button" name="go back" class="btn-square-shadow2" onclick="location.href='./jukousha_list.php'" value="go back to list"/>
+</div>
+
+</html>

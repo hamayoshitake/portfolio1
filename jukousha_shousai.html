@@ -1,0 +1,34 @@
+<!doctype html>
+ <html>
+ <link rel="stylesheet" href="kanrisha_shousai.css">
+ <head>
+   <meta charset="UTF-8">
+
+ <title>受講者詳細</title>
+ </head>
+ <body>
+
+ <h1>受講者情報詳細</h1>
+
+ <table id="kanrisha_list">
+ <form method="post" action="./jukousha_shousai.php">
+ <input type="hidden" name="jukousha_id" class="list" value="<###id###>" />
+ <tr><th>受講者番号：</th><td><input type="text" name="jukousha_bango"class="list" value="<###bango###>" /></td></tr>
+ <tr><th>受講者名：</th><td><input type="text" name="jukousha_mei" class="list" value="<###mei###>" /></td></tr>
+<tr><th>受講者(かな)：</th><td><input type="text" name="jukousha_kana" class="list" value="<###kana###>" /></td></tr>
+<tr><th>期：</th><td><input type="text" name="jukousha_ki"class="list" value="<###ki###>" /></td></tr>
+<tr><th>パスワード：</th><td><input type="text" name="jukousha_pass" class="list" value="<###pass###>" /></td></tr>
+
+</form>
+</body>
+</table>
+
+</div>
+<div class="logout">
+<input type="button" name="logout" class="btn-square-shadow" onclick="location.href='./login.php'" value="LOGOUT"/>
+</div>
+<div class="go back">
+<input type="button" name="go back" class="btn-square-shadow2" onclick="location.href='./jukousha_list.php'" value="go back to list"/>
+</div>
+
+</html>
